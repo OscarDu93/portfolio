@@ -51,6 +51,8 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  transition: all 1s ease-out;
+  transition: 0.5s;
 }
 
 .darkhead:hover {
@@ -60,13 +62,22 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  transition: 0.5s;
 }
 
 .chapters {
   color: #fff;
   font-family: Helvetica;
   font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  mix-blend-mode: exclusion;
+}
+
+.Name {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 250px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
