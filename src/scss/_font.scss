@@ -32,6 +32,16 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  transition: 0.5s;
+}
+
+.head:hover {
+  color: #000;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .darkhead {
@@ -41,6 +51,16 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.darkhead:hover {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: 0.5s;
 }
 
 .chapters {

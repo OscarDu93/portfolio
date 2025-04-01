@@ -1,9 +1,5 @@
-.project-one {
-  position: relative;
-}
-
 .swiper {
-  width: 1512px;
+  width: 100%;
 }
 
 .swiper-slide {
@@ -13,8 +9,11 @@
 }
 
 .swiper-slide img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: block;
-  width: 974px;
+  height: 730px;
   object-fit: cover;
 }
 
