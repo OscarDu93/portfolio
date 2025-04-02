@@ -12,9 +12,23 @@
 }
 
 .transition-2 {
-  position: fixed;
+  position: relative;
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: trans-2;
+  opacity: 0%;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+}
+
+@keyframes trans-2 {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    display: none;
+  }
 }
