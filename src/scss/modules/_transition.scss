@@ -1,5 +1,5 @@
 .transition-1 {
-  position: relative;
+  position: fixed;
   z-index: 1;
   display: flex;
   height: 100vh;
@@ -9,157 +9,177 @@
   gap: 10px;
   flex-shrink: 0;
   background: url(/src/img/background.png) lightgray 50% / cover no-repeat;
+  animation-name: moveOutBottom;
+  animation-duration: 900ms;
+  animation-delay: 500ms;
+  animation-timing-function: cubic-bezier(0, 0, 1, -0.06);
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveOutBottom {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
 }
 
 .transition-2 {
-  position: relative;
+  position: fixed;
   z-index: 1;
   display: flex;
-  height: 100vh;
-  padding: 344px 169px;
+  width: 100%;
+  padding-left: 1%;
+  padding-top: 20%;
+  padding-bottom: 15%;
   justify-content: center;
   align-items: center;
   background: url(/src/img/art/1.jpg) lightgray 50% / cover no-repeat;
-  opacity: 0%;
   animation-name: trans;
   animation-duration: 900ms;
-  visibility: hidden;
-  animation-direction: reverse;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 
 @keyframes trans {
   0% {
-    opacity: 0%;
+    opacity: 1;
+    visibility: visible;
   }
   100% {
-    opacity: 100%;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
 .transition-3 {
-  position: relative;
+  position: fixed;
   z-index: 1;
   display: flex;
-  height: 100vh;
-  padding: 344px 169px;
+  width: 100%;
+  padding-left: 1%;
+  padding-top: 20%;
+  padding-bottom: 15%;
   justify-content: center;
   align-items: center;
   background: url(/src/img/art/2.jpg) lightgray 50% / cover no-repeat;
-  opacity: 0%;
   animation-name: trans;
   animation-duration: 900ms;
-  visibility: hidden;
-  animation-direction: reverse;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 
 .transition-4 {
-  position: relative;
+  position: fixed;
   z-index: 1;
   display: flex;
-  height: 100vh;
-  padding: 344px 169px;
+  width: 100%;
+  padding-left: 1%;
+  padding-top: 20%;
+  padding-bottom: 15%;
   justify-content: center;
   align-items: center;
   background: url(/src/img/art/3.jpg) lightgray 50% / cover no-repeat;
-  opacity: 0%;
   animation-name: trans;
   animation-duration: 900ms;
-  visibility: hidden;
-  animation-direction: reverse;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 
 .transition-5 {
-  position: relative;
+  position: fixed;
   z-index: 1;
   display: flex;
-  height: 100vh;
-  padding: 344px 169px;
+  width: 100%;
+  padding-left: 1%;
+  padding-top: 20%;
+  padding-bottom: 15%;
   justify-content: center;
   align-items: center;
   background: url(/src/img/art/4.jpg) lightgray 50% / cover no-repeat;
-  opacity: 0%;
   animation-name: trans;
   animation-duration: 900ms;
-  visibility: hidden;
-  animation-direction: reverse;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 
 .transition-6 {
-  position: relative;
+  position: fixed;
   z-index: 1;
   display: flex;
-  height: 100vh;
-  padding: 344px 169px;
+  width: 100%;
+  padding-left: 1%;
+  padding-top: 20%;
+  padding-bottom: 15%;
   justify-content: center;
   align-items: center;
   background: url(/src/img/art/5.jpg) lightgray 50% / cover no-repeat;
-  opacity: 0%;
   animation-name: trans;
   animation-duration: 900ms;
-  visibility: hidden;
-  animation-direction: reverse;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 
 .transition-7 {
-  position: relative;
+  position: fixed;
   z-index: 1;
   display: flex;
-  height: 100vh;
-  padding: 344px 169px;
+  width: 100%;
+  padding-left: 1%;
+  padding-top: 20%;
+  padding-bottom: 15%;
   justify-content: center;
   align-items: center;
   background: url(/src/img/art/6.jpg) lightgray 50% / cover no-repeat;
-  opacity: 0%;
   animation-name: trans;
   animation-duration: 900ms;
-  visibility: hidden;
-  animation-direction: reverse;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 
 .transition-8 {
-  position: relative;
+  position: fixed;
   z-index: 1;
   display: flex;
-  height: 100vh;
-  padding: 344px 169px;
+  width: 100%;
+  padding-left: 1%;
+  padding-top: 20%;
+  padding-bottom: 15%;
   justify-content: center;
   align-items: center;
   background: url(/src/img/art/7.jpg) lightgray 50% / cover no-repeat;
-  opacity: 0%;
   animation-name: trans;
   animation-duration: 900ms;
-  visibility: hidden;
-  animation-direction: reverse;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 
 .transition-9 {
-  position: relative;
+  position: fixed;
   z-index: 1;
   display: flex;
-  height: 100vh;
-  padding: 344px 169px;
+  width: 100%;
+  padding-left: 1%;
+  padding-top: 20%;
+  padding-bottom: 15%;
   justify-content: center;
   align-items: center;
   background: url(/src/img/art/8.jpg) lightgray 50% / cover no-repeat;
-  opacity: 0%;
   animation-name: trans;
   animation-duration: 900ms;
-  visibility: hidden;
-  animation-direction: reverse;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 
 .transition-10 {
   position: fixed;
   z-index: 1;
   display: flex;
-  height: 100vh;
-  padding: 344px 169px;
-  justify-content: center;
-  align-items: center;
-  opacity: 0%;
   animation-name: trans;
   animation-duration: 900ms;
-  visibility: hidden;
-  animation-direction: reverse;
+  animation-delay: 200ms;
+  animation-fill-mode: forwards;
 }
